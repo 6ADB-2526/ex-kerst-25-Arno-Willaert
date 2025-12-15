@@ -8,6 +8,7 @@ import json
 
 # Create your views here.
 
+# je kent onvoldoende de methodes om gegevens uit een databank te halen. 
 
 def all(request):
     gebruikers = Gebruiker.objects.all().values()

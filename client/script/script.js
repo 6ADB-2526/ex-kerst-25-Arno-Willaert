@@ -1,3 +1,6 @@
+// Waarom staat dit object hier? 
+
+
 const users = [
   {
     id: 1,
@@ -35,6 +38,7 @@ const users = [
 
 
 
+// dit kan niet lukken - de api geeft data terug bij url/user
 fetch("https://ex-kerst-2025.onrender.com/")
 .then(resultaat => resultaat.json())
 .then(gebruiker => {
@@ -42,6 +46,11 @@ fetch("https://ex-kerst-2025.onrender.com/")
     
 })
 
+
+// hieronder toon je aan dat je array functions kent, maar deze zijn niet toegepast 
+// op de data die we terug krijgen van de API
+
+// JE hebt hieronder trouwens NODE aan het schrijven terwijl we met een client werken. 
 const getAllUsers = (req, res) => {
     res.json(users)
 }
